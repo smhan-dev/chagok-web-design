@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>차곡 — 하루의 끝에, 차 한 잔만큼의 고요</title>
+  <meta name="description" content="하동, 보성, 제주의 다원에서 직접 고른 한국 차를 매달 집으로 보내 드립니다. 차곡 티 구독.">
+  <meta name="theme-color" content="#F4EFE6">
+  <link rel="preload" href="../assets/fonts/gowun-batang-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/pretendard-vf.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 바로가기</a>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="차곡 처음으로">
+        <span class="logo-ko">차곡</span><span class="logo-en">Chagok Tea</span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" data-nav-toggle>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>메뉴
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#story">이야기</a></li>
+          <li><a href="#teas">이달의 차</a></li>
+          <li><a href="#plans">구독</a></li>
+          <li><a href="#visit">서촌 다실</a></li>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-accent btn-sm header-cta" href="#plans">구독 시작</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: 한 문장 + 한 개의 주 행동(CTA) -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="latin">No. 27</span><span class="eyebrow-line" aria-hidden="true"></span>2026 가을 큐레이션</p>
+          <h1 id="hero-title">하루의 끝에,<br>차 한 잔만큼의 고요</h1>
+          <p class="lede">하동, 보성, 제주의 다원에서 직접 고른 한국 차를 매달 집으로 보내 드립니다. 물을 끓이고, 기다리고, 한 모금 머금는 5분. 그 짧은 의식이 하루의 결을 바꿉니다.</p>
+          <div class="hero-cta">
+            <a class="btn btn-accent btn-lg" href="#plans">이달의 차 받아보기</a>
+            <a class="link-arrow" href="#teas">차 컬렉션 보기</a>
+          </div>
+          <ul class="hero-meta" aria-label="구독 혜택">
+            <li>첫 달 30% 할인</li>
+            <li>매달 5일 도착</li>
+            <li>언제든 해지</li>
+          </ul>
+        </div>
+
+        <figure class="hero-art" aria-hidden="true">
+          <div class="bowl">
+            <div class="bowl-tea"></div>
+            <div class="bowl-shine"></div>
+          </div>
+          <svg class="leaf" viewBox="0 0 120 220" fill="none">
+            <path d="M60 212C18 160 8 82 60 10c52 72 42 150 0 202Z" fill="#2F4B3C"/>
+            <path d="M60 205V26M60 70l-22-18M60 70l22-18M60 110l-28-22M60 110l28-22M60 150l-24-20M60 150l24-20" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+          </svg>
+          <p class="vertical">차곡차곡 쌓이는 쉼</p>
+          <span class="seal">차<br>곡</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 01 이야기 -->
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-no"><span class="latin">01</span>이야기</p>
+          <h2 id="story-title">차를 고르는 세 가지 원칙</h2>
+          <p class="section-lede">차곡은 2019년 서촌의 작은 다실에서 시작했습니다. 좋은 차를 고르는 기준은 그때부터 지금까지 같습니다.</p>
+        </header>
+        <ol class="principles">
+          <li data-reveal>
+            <span class="principle-no latin">i.</span>
+            <h3>산지 직거래</h3>
+            <p>하동, 보성, 제주의 다원 열한 곳과 직접 거래합니다. 누가, 어디서, 어떻게 길렀는지 모든 차에 이름을 붙여 보냅니다.</p>
+          </li>
+          <li data-reveal>
+            <span class="principle-no latin">ii.</span>
+            <h3>소량 블렌딩</h3>
+            <p>서촌 작업실에서 한 번에 30kg 이하로만 덖고 섞습니다. 갓 만든 향이 날아가기 전에 보내기 위해서입니다.</p>
+          </li>
+          <li data-reveal>
+            <span class="principle-no latin">iii.</span>
+            <h3>계절 큐레이션</h3>
+            <p>봄에는 첫물차, 겨울에는 깊은 발효차. 계절과 몸이 원하는 차를 매달 다르게 고릅니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="quote-band" aria-label="다원주 인터뷰">
+      <div class="wrap">
+        <figure class="quote" data-reveal>
+          <blockquote>
+            <p>좋은 차는 서두르지 않는 사람에게만 제 맛을 보여 줍니다.</p>
+          </blockquote>
+          <figcaption>김정순 · 하동 쌍계 다원 3대 다원주</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 이달의 차 : 필터 -->
+    <section class="section" id="teas" aria-labelledby="teas-title">
+      <div class="wrap">
+        <header class="section-head split" data-reveal>
+          <div>
+            <p class="section-no"><span class="latin">02</span>이달의 차</p>
+            <h2 id="teas-title">이번 가을, 여섯 가지 차</h2>
+          </div>
+          <div class="filters" role="group" aria-label="차 종류로 거르기">
+            <button class="chip" type="button" aria-pressed="true" data-filter="all">전체</button>
+            <button class="chip" type="button" aria-pressed="false" data-filter="green">녹차</button>
+            <button class="chip" type="button" aria-pressed="false" data-filter="aged">발효차</button>
+            <button class="chip" type="button" aria-pressed="false" data-filter="blend">블렌드</button>
+          </div>
+        </header>
+
+        <ul class="tea-grid" data-tea-list>
+          <li class="tea" data-type="green" style="--liquor:#C9C37C">
+            <span class="liquor" aria-hidden="true"></span>
+            <p class="tea-origin">하동 · 녹차</p>
+            <h3>첫물 녹차</h3>
+            <p class="tea-notes">갓 벤 풀, 볶은 잣, 맑은 단맛</p>
+            <dl class="brew">
+              <div><dt>물 온도</dt><dd>70°C</dd></div>
+              <div><dt>우림</dt><dd>2분</dd></div>
+              <div><dt>카페인</dt><dd>중간</dd></div>
+            </dl>
+          </li>
+          <li class="tea" data-type="green" style="--liquor:#6F9A3E">
+            <span class="liquor" aria-hidden="true"></span>
+            <p class="tea-origin">제주 · 녹차</p>
+            <h3>제주 말차</h3>
+            <p class="tea-notes">진한 감칠맛, 생크림, 해초</p>
+            <dl class="brew">
+              <div><dt>물 온도</dt><dd>80°C</dd></div>
+              <div><dt>우림</dt><dd>격불 30초</dd></div>
+              <div><dt>카페인</dt><dd>높음</dd></div>
+            </dl>
+          </li>
+          <li class="tea" data-type="aged" style="--liquor:#C88A3A">
+            <span class="liquor" aria-hidden="true"></span>
+            <p class="tea-origin">하동 · 발효차</p>
+            <h3>잎새 황차</h3>
+            <p class="tea-notes">군고구마, 꿀, 마른 낙엽</p>
+            <dl class="brew">
+              <div><dt>물 온도</dt><dd>90°C</dd></div>
+              <div><dt>우림</dt><dd>3분</dd></div>
+              <div><dt>카페인</dt><dd>낮음</dd></div>
+            </dl>
+          </li>
+          <li class="tea" data-type="aged" style="--liquor:#8E3A22">
+            <span class="liquor" aria-hidden="true"></span>
+            <p class="tea-origin">보성 · 발효차</p>
+            <h3>보성 홍차</h3>
+            <p class="tea-notes">몰트, 말린 자두, 흑설탕</p>
+            <dl class="brew">
+              <div><dt>물 온도</dt><dd>95°C</dd></div>
+              <div><dt>우림</dt><dd>3분</dd></div>
+              <div><dt>카페인</dt><dd>높음</dd></div>
+            </dl>
+          </li>
+          <li class="tea" data-type="blend" style="--liquor:#D7812F">
+            <span class="liquor" aria-hidden="true"></span>
+            <p class="tea-origin">고흥 유자 · 블렌드</p>
+            <h3>유자 루이보스</h3>
+            <p class="tea-notes">유자 껍질, 바닐라, 구운 견과</p>
+            <dl class="brew">
+              <div><dt>물 온도</dt><dd>95°C</dd></div>
+              <div><dt>우림</dt><dd>5분</dd></div>
+              <div><dt>카페인</dt><dd>없음</dd></div>
+            </dl>
+          </li>
+          <li class="tea" data-type="blend" style="--liquor:#B3263E">
+            <span class="liquor" aria-hidden="true"></span>
+            <p class="tea-origin">문경 오미자 · 블렌드</p>
+            <h3>히비스커스 오미자</h3>
+            <p class="tea-notes">붉은 베리, 산뜻한 산미, 다섯 가지 맛</p>
+            <dl class="brew">
+              <div><dt>물 온도</dt><dd>95°C</dd></div>
+              <div><dt>우림</dt><dd>5분</dd></div>
+              <div><dt>카페인</dt><dd>없음</dd></div>
+            </dl>
+          </li>
+        </ul>
+        <p class="tea-count" aria-live="polite" data-tea-count>여섯 가지 차를 모두 보고 있습니다.</p>
+      </div>
+    </section>
+
+    <!-- 03 구독 : 앵커링 + 추천 강조 -->
+    <section class="section plans" id="plans" aria-labelledby="plans-title">
+      <div class="wrap">
+        <header class="section-head center" data-reveal>
+          <p class="section-no"><span class="latin">03</span>구독</p>
+          <h2 id="plans-title">마시는 만큼만, 나에게 맞는 구독</h2>
+          <p class="section-lede">모든 플랜은 첫 달 30% 할인, 무료 배송이며 언제든 건너뛰거나 해지할 수 있습니다.</p>
+          <fieldset class="billing">
+            <legend class="sr-only">결제 주기</legend>
+            <label><input type="radio" name="billing" value="monthly" checked><span>매달 결제</span></label>
+            <label><input type="radio" name="billing" value="yearly"><span>1년 결제 <em>2개월 무료</em></span></label>
+          </fieldset>
+        </header>
+
+        <div class="plan-grid">
+          <article class="plan" data-reveal>
+            <h3>한 잔</h3>
+            <p class="plan-desc">차가 처음인 분께</p>
+            <p class="price"><span data-price data-monthly="14900" data-yearly="12400" data-yearly-total="148800">14,900</span>원 <small>/ 월</small></p>
+            <p class="price-note" data-price-note>매달 결제 · 해지 위약금 없음</p>
+            <ul class="feat">
+              <li>매달 2종 · 20잔</li>
+              <li>우림 가이드 카드</li>
+              <li>무료 배송</li>
+            </ul>
+            <a class="btn btn-line" href="#plans">한 잔 플랜으로 시작</a>
+          </article>
+
+          <article class="plan is-featured" data-reveal>
+            <p class="plan-badge">가장 많이 고르는 플랜</p>
+            <h3>차곡</h3>
+            <p class="plan-desc">매일 한 잔의 습관을 원하는 분께</p>
+            <p class="price"><span data-price data-monthly="24900" data-yearly="20750" data-yearly-total="249000">24,900</span>원 <small>/ 월</small></p>
+            <p class="price-note" data-price-note>매달 결제 · 해지 위약금 없음</p>
+            <ul class="feat">
+              <li>매달 4종 · 40잔</li>
+              <li>계절 큐레이션 노트</li>
+              <li>무료 배송</li>
+              <li>서촌 다실 음료 1잔</li>
+            </ul>
+            <a class="btn btn-accent" href="#plans">차곡 플랜으로 시작</a>
+          </article>
+
+          <article class="plan" data-reveal>
+            <h3>다실</h3>
+            <p class="plan-desc">차를 깊이 알고 싶은 분께</p>
+            <p class="price"><span data-price data-monthly="39000" data-yearly="32500" data-yearly-total="390000">39,000</span>원 <small>/ 월</small></p>
+            <p class="price-note" data-price-note>매달 결제 · 해지 위약금 없음</p>
+            <ul class="feat">
+              <li>매달 6종 · 60잔</li>
+              <li>계절 큐레이션 노트</li>
+              <li>무료 배송</li>
+              <li>분기마다 티 클래스 초대</li>
+            </ul>
+            <a class="btn btn-line" href="#plans">다실 플랜으로 시작</a>
+          </article>
+        </div>
+
+        <ol class="steps" aria-label="구독은 이렇게 진행됩니다">
+          <li><span class="latin">1</span><div><h3>플랜 고르기</h3><p>마시는 양에 맞춰 세 가지 중 하나를 고릅니다.</p></div></li>
+          <li><span class="latin">2</span><div><h3>매달 5일 도착</h3><p>1일에 덖은 차를 바로 보내 5일 전후로 도착합니다.</p></div></li>
+          <li><span class="latin">3</span><div><h3>건너뛰기와 해지는 자유</h3><p>여행 가는 달은 건너뛰고, 해지는 버튼 한 번이면 됩니다.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 후기 : 사회적 증거 -->
+    <section class="section reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-no"><span class="latin">04</span>후기</p>
+          <h2 id="reviews-title">먼저 마셔 본 사람들</h2>
+        </header>
+        <dl class="stats" data-reveal>
+          <div><dt>함께하는 구독자</dt><dd>12,400<span>명</span></dd></div>
+          <div><dt>다음 달에도 구독</dt><dd>87<span>%</span></dd></div>
+          <div><dt>평균 만족도</dt><dd>4.9<span>/ 5</span></dd></div>
+        </dl>
+        <div class="review-grid">
+          <figure class="review" data-reveal>
+            <blockquote><p>퇴근하고 물 끓이는 소리부터 마음이 놓여요. 자기 전에 휴대폰 보는 시간이 확실히 줄었습니다.</p></blockquote>
+            <figcaption><strong>정수민</strong> 디자이너 · 14개월째 구독</figcaption>
+          </figure>
+          <figure class="review" data-reveal>
+            <blockquote><p>매달 다른 차가 와서 지루할 틈이 없어요. 큐레이션 노트 덕분에 차 맛을 말로 표현하는 법을 배웠어요.</p></blockquote>
+            <figcaption><strong>오세훈</strong> 개발자 · 8개월째 구독</figcaption>
+          </figure>
+          <figure class="review" data-reveal>
+            <blockquote><p>카페인 없는 차만 받도록 설정할 수 있어서, 임신 중에도 마음 놓고 구독하고 있습니다.</p></blockquote>
+            <figcaption><strong>한지원</strong> 교사 · 1년 6개월째 구독</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 서촌 다실 -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-grid">
+        <div data-reveal>
+          <p class="section-no"><span class="latin">05</span>서촌 다실</p>
+          <h2 id="visit-title">구독하는 차를<br>다실에서 먼저 맛보세요</h2>
+          <p class="section-lede">예약 없이 오셔도 좋습니다. 이달의 차 여섯 가지를 모두 시음할 수 있습니다.</p>
+          <dl class="hours">
+            <div><dt>화요일 – 금요일</dt><dd>12:00 – 21:00</dd></div>
+            <div><dt>토요일 – 일요일</dt><dd>11:00 – 20:00</dd></div>
+            <div><dt>월요일</dt><dd>쉽니다</dd></div>
+          </dl>
+          <address>서울 종로구 자하문로7길 12, 1층<br>경복궁역 3번 출구에서 걸어서 6분</address>
+        </div>
+        <figure class="map" data-reveal>
+          <svg viewBox="0 0 480 360" role="img" aria-labelledby="map-title">
+            <title id="map-title">경복궁역 3번 출구에서 북쪽으로 걸어서 6분 거리에 있는 차곡 다실 약도</title>
+            <rect width="480" height="360" fill="#EBE4D6"/>
+            <path d="M0 250H480M150 0V360M150 120H480M330 120V360M40 0 70 360" stroke="#FBF8F2" stroke-width="14"/>
+            <path d="M0 250H480M150 0V360M150 120H480M330 120V360M40 0 70 360" stroke="#D6CFC1" stroke-width="1"/>
+            <rect x="350" y="150" width="110" height="80" rx="4" fill="#DCE2D3"/>
+            <text x="405" y="195" text-anchor="middle" font-size="15" fill="#545B55" font-family="Pretendard, sans-serif">경복궁</text>
+            <circle cx="160" cy="262" r="7" fill="#2F4B3C"/>
+            <text x="176" y="285" font-size="14" fill="#545B55" font-family="Pretendard, sans-serif">경복궁역 3번 출구</text>
+            <path d="M160 255V150q0-20 20-24h40" stroke="#B8512A" stroke-width="2.5" stroke-dasharray="6 6" fill="none"/>
+            <circle cx="232" cy="126" r="14" fill="#B8512A"/>
+            <circle cx="232" cy="126" r="5" fill="#FBF8F2"/>
+            <text x="232" y="96" text-anchor="middle" font-size="17" fill="#1F2420" font-family="Gowun Batang, serif">차곡 다실</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 06 자주 묻는 질문 -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <header class="section-head" data-reveal>
+          <p class="section-no"><span class="latin">06</span>자주 묻는 질문</p>
+          <h2 id="faq-title">궁금한 점이 있으신가요</h2>
+        </header>
+        <div class="faq-list">
+          <details>
+            <summary>배송은 언제 도착하나요?</summary>
+            <p>매달 1일에 발송해 5일 전후로 도착합니다. 매달 3일 이전에 구독하시면 그달의 차부터 받아보실 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>해지는 어떻게 하나요?</summary>
+            <p>마이페이지에서 버튼 한 번으로 해지할 수 있습니다. 위약금은 없고, 다음 결제일 하루 전까지 언제든 가능합니다.</p>
+          </details>
+          <details>
+            <summary>카페인이 없는 차도 있나요?</summary>
+            <p>유자 루이보스와 히비스커스 오미자에는 카페인이 없습니다. 구독 설정에서 ‘카페인 없는 차만 받기’를 선택할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>선물로 보낼 수 있나요?</summary>
+            <p>3개월, 6개월, 12개월 선물 구독이 있습니다. 받는 분의 주소를 몰라도 휴대폰 번호만으로 선물할 수 있습니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="wrap cta-inner" data-reveal>
+        <h2 id="cta-title">오늘 밤부터,<br>차 한 잔의 고요를.</h2>
+        <div>
+          <a class="btn btn-paper btn-lg" href="#plans">첫 달 30% 할인으로 시작</a>
+          <p class="cta-note">매달 5일 도착 · 언제든 해지</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-logo">차곡</p>
+        <p class="footer-tag">매일 한 잔, 차곡차곡 쌓이는 쉼.</p>
+      </div>
+      <form class="newsletter" data-newsletter novalidate>
+        <label for="nl-email">계절마다 한 통, 차 편지 받기</label>
+        <div class="field">
+          <input id="nl-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="nl-msg">
+          <button class="btn btn-paper btn-sm" type="submit">받기</button>
+        </div>
+        <p class="form-msg" id="nl-msg" aria-live="polite" data-newsletter-msg></p>
+      </form>
+      <nav aria-label="하단 메뉴">
+        <ul class="footer-links">
+          <li><a href="#story">이야기</a></li>
+          <li><a href="#teas">이달의 차</a></li>
+          <li><a href="#plans">구독</a></li>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© 2026 차곡 · 디자인 연구를 위해 만든 가상의 브랜드입니다.</p>
+      <a href="../index.html">세 가지 버전 비교로 돌아가기</a>
+    </div>
+  </footer>
+</body>
+</html>
