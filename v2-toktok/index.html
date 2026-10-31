@@ -1,1 +1,287 @@
-temporary
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>차곡! — 오늘 기분, 무슨 차?</title>
+  <meta name="description" content="질문 세 개면 끝. 1분 취향 테스트로 나에게 맞는 차를 찾고 첫 박스를 반값에 받아 보세요.">
+  <meta name="theme-color" content="#FFF5E8">
+  <link rel="preload" href="../assets/fonts/black-han-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/pretendard-vf.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 바로가기</a>
+  <p class="topbar">첫 박스 <b>반값</b> + 무료 배송 · 11월 9일(일)까지</p>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="차곡 처음으로">차곡<span aria-hidden="true">!</span></a>
+      <nav aria-label="주요 메뉴">
+        <ul class="nav">
+          <li><a href="#quiz">취향 테스트</a></li>
+          <li><a href="#teas">차 고르기</a></li>
+          <li><a href="#plans">박스 플랜</a></li>
+          <li><a href="#reviews">후기</a></li>
+        </ul>
+      </nav>
+      <a class="box-btn" href="#plans" data-box-link aria-label="내 박스, 0개 담김">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 8h18l-1.6 12.2a1 1 0 0 1-1 .8H5.6a1 1 0 0 1-1-.8L3 8Zm5 0V6a4 4 0 0 1 8 0v2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        <span class="box-count" data-box-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: 큰 약속 하나 + 진입 장벽이 낮은 첫 행동 -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="sticker-label">차알못 대환영</p>
+          <h1 id="hero-title">오늘 기분,<br><mark>무슨 차?</mark></h1>
+          <p class="lede">질문 세 개면 끝. 1분 만에 지금 나한테 딱 맞는 차를 찾아 드려요. 맛없으면 다음 박스는 공짜로 바꿔 드릴게요.</p>
+          <div class="hero-cta">
+            <a class="btn btn-accent btn-xl" href="#quiz">1분 취향 테스트 <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost btn-xl" href="#teas">그냥 구경할래요</a>
+          </div>
+          <ul class="proof" aria-label="차곡 숫자로 보기">
+            <li><b class="num">4.9</b>평균 별점</li>
+            <li><b class="num">3,200+</b>솔직 후기</li>
+            <li><b class="num">0원</b>해지 위약금</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="tin tin-a" style="--tin:#C8F169"><span class="tin-lid"></span><span class="tin-label">첫물<br>녹차</span></div>
+          <div class="tin tin-b" style="--tin:#FF5470"><span class="tin-lid"></span><span class="tin-label">히비스커스<br>오미자</span></div>
+          <div class="tin tin-c" style="--tin:#FFC53D"><span class="tin-lid"></span><span class="tin-label">유자<br>루이보스</span></div>
+          <svg class="spin-badge" viewBox="0 0 200 200">
+            <defs><path id="circle" d="M100 100m-72 0a72 72 0 1 1 144 0a72 72 0 1 1-144 0"/></defs>
+            <circle cx="100" cy="100" r="96" fill="#2F45FF" stroke="#141414" stroke-width="5"/>
+            <g class="spin-ring">
+              <text font-size="20" fill="#FFFFFF" font-family="Black Han Sans, Pretendard, sans-serif" textLength="440" lengthAdjust="spacing"><textPath href="#circle">첫 박스 반값 · FIRST BOX HALF PRICE · </textPath></text>
+            </g>
+            <text x="100" y="116" text-anchor="middle" font-size="46" fill="#C8F169" font-family="Black Han Sans, Pretendard, sans-serif">50%</text>
+          </svg>
+          <span class="sticker s-caf">카페인 0</span>
+          <span class="sticker s-new">NEW</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>제주 말차</span><i></i><span>유자 루이보스</span><i></i><span>히비스커스 오미자</span><i></i><span>잎새 황차</span><i></i><span>첫물 녹차</span><i></i><span>보성 홍차</span><i></i>
+        <span>제주 말차</span><i></i><span>유자 루이보스</span><i></i><span>히비스커스 오미자</span><i></i><span>잎새 황차</span><i></i><span>첫물 녹차</span><i></i><span>보성 홍차</span><i></i>
+      </div>
+    </div>
+
+    <!-- QUIZ: 한 화면에 질문 하나, 선택지 셋 (Hick의 법칙) + 진행 막대 (목표 경사 효과) -->
+    <section class="section quiz-section" id="quiz" aria-labelledby="quiz-title">
+      <div class="wrap">
+        <div class="quiz" data-quiz>
+          <div class="quiz-head">
+            <div>
+              <p class="sticker-label alt">STEP 01 · TEA QUIZ</p>
+              <h2 id="quiz-title">1분 취향 테스트</h2>
+            </div>
+            <p class="quiz-step num" data-quiz-step>1 / 3</p>
+          </div>
+          <div class="quiz-bar" role="progressbar" aria-label="테스트 진행률" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" data-quiz-progress><span data-quiz-bar></span></div>
+          <div class="quiz-body" data-quiz-body>
+            <noscript><p class="quiz-noscript">테스트는 자바스크립트가 필요해요. 대신 <a href="#teas">차 목록</a>에서 골라 보세요!</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 상품: 필터는 4개만 -->
+    <section class="section" id="teas" aria-labelledby="teas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="sticker-label">STEP 02 · PICK</p>
+            <h2 id="teas-title">요즘 제일 잘 나가는 차</h2>
+          </div>
+          <div class="chips" role="group" aria-label="차 거르기">
+            <button class="chip" type="button" aria-pressed="true" data-filter="all">전체</button>
+            <button class="chip" type="button" aria-pressed="false" data-filter="nocaf">카페인 0</button>
+            <button class="chip" type="button" aria-pressed="false" data-filter="morning">아침에</button>
+            <button class="chip" type="button" aria-pressed="false" data-filter="night">밤에</button>
+          </div>
+        </div>
+        <ul class="products" data-products>
+          <li class="product" id="tea-first" data-tags="morning" style="--tin:#C8F169">
+            <div class="product-art"><div class="tin tin-sm"><span class="tin-lid"></span><span class="tin-label">첫물<br>녹차</span></div></div>
+            <h3>첫물 녹차</h3>
+            <p class="product-copy">갓 벤 풀, 볶은 잣 향. 아침 공기 같은 첫 모금.</p>
+            <p class="product-tags"><span>카페인 중간</span><span>아침 추천</span></p>
+            <div class="product-foot"><p class="price num">18,000<small>원</small></p><button class="btn btn-sm btn-ink" type="button" data-add="first">담기 +</button></div>
+          </li>
+          <li class="product" id="tea-matcha" data-tags="morning" style="--tin:#5BC16B">
+            <div class="product-art"><div class="tin tin-sm"><span class="tin-lid"></span><span class="tin-label">제주<br>말차</span></div></div>
+            <h3>제주 말차</h3>
+            <p class="product-copy">진한 감칠맛에 생크림 같은 거품. 라테로도 최고.</p>
+            <p class="product-tags"><span>카페인 높음</span><span>아침 추천</span></p>
+            <div class="product-foot"><p class="price num">24,000<small>원</small></p><button class="btn btn-sm btn-ink" type="button" data-add="matcha">담기 +</button></div>
+          </li>
+          <li class="product" id="tea-hwang" data-tags="night" style="--tin:#FFC53D">
+            <div class="product-art"><div class="tin tin-sm"><span class="tin-lid"></span><span class="tin-label">잎새<br>황차</span></div></div>
+            <h3>잎새 황차</h3>
+            <p class="product-copy">군고구마랑 꿀 향. 구수해서 누구나 좋아해요.</p>
+            <p class="product-tags"><span>카페인 낮음</span><span>저녁 추천</span></p>
+            <div class="product-foot"><p class="price num">20,000<small>원</small></p><button class="btn btn-sm btn-ink" type="button" data-add="hwang">담기 +</button></div>
+          </li>
+          <li class="product" id="tea-black" data-tags="morning" style="--tin:#2F45FF">
+            <div class="product-art"><div class="tin tin-sm tin-dark"><span class="tin-lid"></span><span class="tin-label">보성<br>홍차</span></div></div>
+            <h3>보성 홍차</h3>
+            <p class="product-copy">몰트, 흑설탕, 말린 자두. 우유를 부르는 맛.</p>
+            <p class="product-tags"><span>카페인 높음</span><span>아침 추천</span></p>
+            <div class="product-foot"><p class="price num">19,000<small>원</small></p><button class="btn btn-sm btn-ink" type="button" data-add="black">담기 +</button></div>
+          </li>
+          <li class="product" id="tea-yuja" data-tags="nocaf night" style="--tin:#FF9F1C">
+            <div class="product-art"><div class="tin tin-sm"><span class="tin-lid"></span><span class="tin-label">유자<br>루이보스</span></div></div>
+            <h3>유자 루이보스</h3>
+            <p class="product-copy">상큼한 유자 껍질에 바닐라 한 방울. 자기 전 한 잔.</p>
+            <p class="product-tags"><span>카페인 0</span><span>밤 추천</span></p>
+            <div class="product-foot"><p class="price num">16,000<small>원</small></p><button class="btn btn-sm btn-ink" type="button" data-add="yuja">담기 +</button></div>
+          </li>
+          <li class="product" id="tea-hibi" data-tags="nocaf night" style="--tin:#FF5470">
+            <div class="product-art"><div class="tin tin-sm"><span class="tin-lid"></span><span class="tin-label">히비스커스<br>오미자</span></div></div>
+            <h3>히비스커스 오미자</h3>
+            <p class="product-copy">새콤달콤 붉은 베리 맛. 얼음 가득 아이스로!</p>
+            <p class="product-tags"><span>카페인 0</span><span>밤 추천</span></p>
+            <div class="product-foot"><p class="price num">16,000<small>원</small></p><button class="btn btn-sm btn-ink" type="button" data-add="hibi">담기 +</button></div>
+          </li>
+        </ul>
+        <p class="sr-only" aria-live="polite" data-filter-status></p>
+      </div>
+    </section>
+
+    <!-- 박스 플랜: 라디오 카드 + 실시간 가격 요약 -->
+    <section class="section plans-section" id="plans" aria-labelledby="plans-title">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="sticker-label alt">STEP 03 · BOX</p>
+          <h2 id="plans-title">박스 크기만 고르면 끝</h2>
+        </div>
+        <form class="box-form" data-box-form>
+          <fieldset class="sizes">
+            <legend class="sr-only">박스 크기</legend>
+            <label class="size-card">
+              <input type="radio" name="size" value="S" data-price="14900">
+              <span class="size-name num">S</span>
+              <span class="size-desc">2종 · 20잔<br><small>일주일에 서너 잔</small></span>
+              <span class="size-price num">14,900원</span>
+            </label>
+            <label class="size-card">
+              <input type="radio" name="size" value="M" data-price="24900" checked>
+              <span class="size-best">BEST</span>
+              <span class="size-name num">M</span>
+              <span class="size-desc">4종 · 40잔<br><small>하루 한 잔 루틴</small></span>
+              <span class="size-price num">24,900원</span>
+            </label>
+            <label class="size-card">
+              <input type="radio" name="size" value="L" data-price="39000">
+              <span class="size-name num">L</span>
+              <span class="size-desc">6종 · 60잔<br><small>둘이 나눠 마셔요</small></span>
+              <span class="size-price num">39,000원</span>
+            </label>
+          </fieldset>
+          <div class="box-summary">
+            <fieldset class="freq">
+              <legend>얼마나 자주 받을래요?</legend>
+              <label><input type="radio" name="freq" value="1" checked><span>매달</span></label>
+              <label><input type="radio" name="freq" value="2"><span>2달마다</span></label>
+            </fieldset>
+            <p class="first-price">첫 박스 <s class="num" data-orig>24,900원</s> <strong class="num" data-first>12,450원</strong></p>
+            <p class="next-price" data-next>다음 박스부터 매달 24,900원 · 언제든 해지</p>
+            <button class="btn btn-accent btn-xl btn-block" type="submit">이 박스로 시작하기</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 후기 -->
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="sticker-label">REAL TALK</p>
+            <h2 id="reviews-title">마셔 본 사람들 왈</h2>
+          </div>
+          <p class="rating"><b class="num">4.9</b> / 5 <span>후기 3,214개</span></p>
+        </div>
+        <ul class="reviews">
+          <li class="review r1">
+            <p class="stars" aria-label="별점 5점 만점에 5점"><span aria-hidden="true"></span></p>
+            <p class="review-text">차알못인데 테스트로 고른 유자 루이보스가 인생 차 됐어요. 이제 밤마다 한 잔씩!</p>
+            <p class="review-who">민지 · 24 · 대학생</p>
+          </li>
+          <li class="review r2">
+            <p class="stars" aria-label="별점 5점 만점에 5점"><span aria-hidden="true"></span></p>
+            <p class="review-text">말차 거품 내는 영상이 같이 와서 처음인데도 카페처럼 만들었어요.</p>
+            <p class="review-who">준호 · 29 · 마케터</p>
+          </li>
+          <li class="review r3">
+            <p class="stars" aria-label="별점 5점 만점에 4점"><span aria-hidden="true" style="--rate:4"></span></p>
+            <p class="review-text">히비스커스는 무조건 아이스. 회사 냉장고에 넣어 두면 동료들이 다 물어봐요.</p>
+            <p class="review-who">소연 · 31 · 개발자</p>
+          </li>
+          <li class="review r4">
+            <p class="stars" aria-label="별점 5점 만점에 5점"><span aria-hidden="true"></span></p>
+            <p class="review-text">커피 줄이려고 시작했는데 오후엔 황차로 완전히 바꿨어요. 속이 편해요.</p>
+            <p class="review-who">태윤 · 35 · 회사원</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div class="wrap faq-wrap">
+        <h2 id="faq-title">궁금한 거<br>다 물어봐요</h2>
+        <div class="faq">
+          <details>
+            <summary>맛이 없으면 어떡해요?</summary>
+            <p>첫 박스가 입에 안 맞으면 다음 박스는 원하는 차로 무료 교환해 드려요. 후기에 한 줄만 남겨 주세요.</p>
+          </details>
+          <details>
+            <summary>해지하기 어렵지 않아요?</summary>
+            <p>마이페이지에서 버튼 한 번이면 끝. 위약금도 없고, 이유를 꼬치꼬치 묻지도 않아요.</p>
+          </details>
+          <details>
+            <summary>찻주전자가 없어도 돼요?</summary>
+            <p>모든 차가 삼각 티백이라 머그컵 하나면 충분해요. 말차만 작은 거품기가 함께 가요.</p>
+          </details>
+          <details>
+            <summary>박스는 언제 와요?</summary>
+            <p>매달 1일에 출발해서 보통 3일 안에 도착해요. 출발하는 날 카카오톡으로 알려 드려요.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer-word" aria-hidden="true">차곡!</p>
+      <div class="footer-row">
+        <p>© 2026 차곡 · 디자인 연구를 위해 만든 가상의 브랜드예요.</p>
+        <a href="../index.html">세 가지 버전 비교로 돌아가기</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모바일: 엄지가 닿는 아래쪽에 핵심 행동 고정 (Fitts의 법칙) -->
+  <div class="mobile-bar">
+    <a class="btn btn-accent" href="#quiz">1분 테스트</a>
+    <a class="btn btn-ghost" href="#plans">내 박스 <span class="num" data-box-count>0</span></a>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
