@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>좋은 웹사이트 디자인이란 — 차곡, 세 가지 버전 비교</title>
+  <meta name="description" content="가상의 한국 차 브랜드 차곡을 세 가지 디자인 철학으로 만든 웹사이트 비교. 컬러 시스템, 타이포그래피, UX 결정을 정리했습니다.">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="hub.css">
+</head>
+<body>
+  <header class="hub-hero wrap">
+    <p class="eyebrow">Design Study · 2026</p>
+    <h1>좋은 웹사이트 디자인이란 무엇인가</h1>
+    <p class="lede">가상의 한국 차 브랜드 ‘차곡’을 세 가지 방식으로 디자인했습니다. 상품과 정보는 같고, 누구에게 무엇을 하게 할지만 다릅니다. 그 차이가 색, 글꼴, 레이아웃, 인터랙션을 어떻게 바꾸는지 비교해 보세요.</p>
+    <nav class="quick" aria-label="바로가기">
+      <a href="#v1">V1 고요</a>
+      <a href="#v2">V2 톡톡</a>
+      <a href="#v3">V3 밤다실</a>
+      <a href="#compare">한눈에 비교</a>
+      <a href="https://github.com/smhan-dev/chagok-web-design/blob/main/docs/research.md">리서치 문서</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="principles wrap" aria-labelledby="p-title">
+      <h2 id="p-title">리서치에서 뽑은 여섯 가지 기준</h2>
+      <ol class="p-grid">
+        <li><span class="p-no">01</span><h3>목표가 하나로 보인다</h3><p>페이지마다 가장 중요한 행동 하나를 정하고, 크기·색·여백의 위계로 그것부터 보이게 합니다.</p></li>
+        <li><span class="p-no">02</span><h3>색은 역할로 나눈다</h3><p>바탕 60, 키와 보조 30, 포인트 10. 포인트 색은 누를 곳에만 써야 눈에 띕니다(폰 레스토프 효과).</p></li>
+        <li><span class="p-no">03</span><h3>모두가 읽을 수 있다</h3><p>본문 대비 4.5:1, 큰 글자와 UI 요소 3:1, 누를 곳은 24px 이상. 한글은 단어 단위 줄바꿈과 1.7 안팎의 행간.</p></li>
+        <li><span class="p-no">04</span><h3>익숙하게, 적게 고르게</h3><p>사람들은 다른 사이트에서 익힌 방식을 기대하고(제이콥의 법칙), 선택지가 적을수록 빨리 결정합니다(힉의 법칙).</p></li>
+        <li><span class="p-no">05</span><h3>모든 행동에 바로 반응한다</h3><p>누르면 눌린 티가 나고, 결과는 말로 알려 줍니다. 진행 상황이 보이면 끝까지 갑니다(목표 경사 효과).</p></li>
+        <li><span class="p-no">06</span><h3>빠르고 가볍다</h3><p>LCP 2.5초, INP 200ms, CLS 0.1 이내가 목표. 이 프로젝트는 쓰는 글자만 남겨 한글 폰트 6.5MB를 134KB로 줄였습니다.</p></li>
+      </ol>
+    </section>
+
+    <!-- V1 -->
+    <section class="version wrap" id="v1" aria-labelledby="v1-title" style="--v-key:#2F4B3C; --v-bg:#F4EFE6">
+      <div class="v-head">
+        <p class="v-no">V1</p>
+        <div>
+          <h2 id="v1-title">고요 <span>Editorial Calm</span></h2>
+          <p class="v-concept">한지 위에 놓인 찻사발. 잡지처럼 천천히 읽히는 페이지.</p>
+        </div>
+        <a class="open" href="v1-goyo/index.html">열어 보기 →</a>
+      </div>
+      <div class="shots">
+        <a class="shot-desktop" href="v1-goyo/index.html"><img src="screenshots/v1-desktop.png" width="1440" height="900" loading="lazy" alt="V1 고요의 첫 화면. 한지색 바탕에 명조 제목과 말차 찻사발 그림"></a>
+        <img class="shot-mobile" src="screenshots/v1-mobile.png" width="390" height="844" loading="lazy" alt="V1 고요의 모바일 첫 화면">
+      </div>
+      <div class="v-grid">
+        <div>
+          <h3 class="v-sub">컬러 시스템</h3>
+          <div class="ratio" role="img" aria-label="면적 비율: 바탕 60%, 키 22%, 보조 8%, 포인트 10%">
+            <span style="--c:#F4EFE6; --w:60">바탕 60</span><span style="--c:#2F4B3C; --w:22; --t:#F4EFE6">키 22</span><span style="--c:#A9B59F; --w:8"></span><span style="--c:#B8512A; --w:10; --t:#fff">10</span>
+          </div>
+          <ul class="swatches">
+            <li><span class="sw" style="--c:#2F4B3C"></span><p><b>키</b> 송엽 <code>#2F4B3C</code><small>로고, 제목, 선택 상태, 마지막 CTA 띠</small></p></li>
+            <li><span class="sw" style="--c:#A9B59F"></span><p><b>보조</b> 이끼 세이지 <code>#A9B59F</code><small>점, 태그 바탕, 장식에만 (글자에는 쓰지 않음)</small></p></li>
+            <li><span class="sw" style="--c:#F4EFE6"></span><p><b>바탕</b> 한지 <code>#F4EFE6</code><small>한지 그늘 #EBE4D6로 구획을 바꿈</small></p></li>
+            <li><span class="sw" style="--c:#B8512A"></span><p><b>포인트</b> 감 <code>#B8512A</code><small>주 CTA, 낙관, 읽기 진행 막대. 작은 글자는 #9C4322</small></p></li>
+          </ul>
+          <p class="harmony">조화: 차가운 송엽과 따뜻한 감빛의 온도 대비. 채도를 낮춰 차분하게.</p>
+        </div>
+        <div>
+          <h3 class="v-sub">타이포그래피</h3>
+          <p class="specimen sp-v1">하루의 끝에, 고요 <em>No. 27</em></p>
+          <p class="type-note">제목 고운바탕 · 본문 Pretendard 17px / 행간 1.8 · 숫자 Cormorant Garamond Italic</p>
+          <h3 class="v-sub">레이아웃</h3>
+          <p class="v-text">넓은 여백, 1px 선으로 나눈 3단 그리드, 섹션 번호(01–06)로 잡지 같은 읽기 흐름을 만듭니다.</p>
+        </div>
+        <div>
+          <h3 class="v-sub">UX 장치</h3>
+          <ul class="ux">
+            <li>아래로 읽을 땐 숨고, 위로 올리면 나타나는 헤더 + 읽기 진행 막대</li>
+            <li>차 종류 필터(토글 버튼). 결과 개수를 스크린리더에도 알림</li>
+            <li>월/연 결제 전환 시 월 환산가와 1년 총액을 함께 표시</li>
+            <li>추천 플랜 하나만 강조. 버튼 문구는 “차곡 플랜으로 시작”처럼 행동 그대로</li>
+            <li>틀린 이메일은 무엇이 틀렸고 어떻게 고칠지 함께 안내</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- V2 -->
+    <section class="version wrap" id="v2" aria-labelledby="v2-title" style="--v-key:#FF5470; --v-bg:#FFF5E8">
+      <div class="v-head">
+        <p class="v-no">V2</p>
+        <div>
+          <h2 id="v2-title">톡톡 <span>Pop Brutal</span></h2>
+          <p class="v-concept">재료에서 뽑은 팝 컬러와 굵은 먹선. 눌러 보고 싶은 페이지.</p>
+        </div>
+        <a class="open" href="v2-toktok/index.html">열어 보기 →</a>
+      </div>
+      <div class="shots">
+        <a class="shot-desktop" href="v2-toktok/index.html"><img src="screenshots/v2-desktop.png" width="1440" height="900" loading="lazy" alt="V2 톡톡의 첫 화면. 크림색 바탕에 굵은 제목과 핑크 패널 위 틴 케이스"></a>
+        <img class="shot-mobile" src="screenshots/v2-mobile.png" width="390" height="844" loading="lazy" alt="V2 톡톡의 모바일 첫 화면">
+      </div>
+      <div class="v-grid">
+        <div>
+          <h3 class="v-sub">컬러 시스템</h3>
+          <div class="ratio" role="img" aria-label="면적 비율: 바탕 60%, 키 18%, 보조 12%, 포인트 10%">
+            <span style="--c:#FFF5E8; --w:60">바탕 60</span><span style="--c:#FF5470; --w:18">키 18</span><span style="--c:#C8F169; --w:12">12</span><span style="--c:#2F45FF; --w:10; --t:#fff">10</span>
+          </div>
+          <ul class="swatches">
+            <li><span class="sw" style="--c:#FF5470"></span><p><b>키</b> 히비스커스 <code>#FF5470</code><small>히어로 패널, 플랜 구획, 강조 단어. 위에는 검정 글자만</small></p></li>
+            <li><span class="sw" style="--c:#C8F169"></span><p><b>보조</b> 말차 라임 <code>#C8F169</code><small>퀴즈 구획, 선택된 카드, 스티커</small></p></li>
+            <li><span class="sw" style="--c:#FFF5E8"></span><p><b>바탕</b> 오트밀크 <code>#FFF5E8</code><small>먹선 #141414와 함께 모든 색을 묶어 줌</small></p></li>
+            <li><span class="sw" style="--c:#2F45FF"></span><p><b>포인트</b> 코발트 <code>#2F45FF</code><small>“1분 취향 테스트”, “이 박스로 시작하기” 같은 주 CTA 전용</small></p></li>
+          </ul>
+          <p class="harmony">조화: 핑크·라임·코발트가 색상환에서 고르게 떨어진 삼각 배색에 가까운 고채도 조합. 2.5px 먹선과 같은 방향의 그림자가 산만함을 잡아 줌.</p>
+        </div>
+        <div>
+          <h3 class="v-sub">타이포그래피</h3>
+          <p class="specimen sp-v2">오늘 기분, 무슨 차?</p>
+          <p class="type-note">제목 검은고딕(Black Han Sans) · 본문 Pretendard 500 · 숫자·영문 Space Grotesk</p>
+          <h3 class="v-sub">레이아웃</h3>
+          <p class="v-text">두꺼운 테두리 카드, 4–10px 하드 섀도, 기울인 스티커. 누르면 그림자가 사라지며 실제로 눌리는 것처럼 보입니다.</p>
+        </div>
+        <div>
+          <h3 class="v-sub">UX 장치</h3>
+          <ul class="ux">
+            <li>한 화면에 질문 하나, 선택지 셋인 1분 취향 테스트 + 진행 막대</li>
+            <li>결과는 “밤 + 상큼·새콤 + 카페인 0 = 유자 루이보스”처럼 이유까지</li>
+            <li>담으면 배지 숫자가 튀고 토스트가 알려 줌 (조사 을/를 자동 처리)</li>
+            <li>모바일은 엄지가 닿는 아래쪽에 핵심 행동 고정(피츠의 법칙)</li>
+            <li>박스 크기를 고르는 즉시 첫 박스 가격과 다음 결제액을 다시 계산</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- V3 -->
+    <section class="version wrap" id="v3" aria-labelledby="v3-title" style="--v-key:#8EC5B0; --v-bg:#0E1110">
+      <div class="v-head">
+        <p class="v-no">V3</p>
+        <div>
+          <h2 id="v3-title">밤다실 <span>Noir Premium</span></h2>
+          <p class="v-concept">불 꺼진 다실, 청자 찻잔 속 호박빛 차. 어둠은 무대이고 빛은 차.</p>
+        </div>
+        <a class="open" href="v3-bamdasil/index.html">열어 보기 →</a>
+      </div>
+      <div class="shots">
+        <a class="shot-desktop" href="v3-bamdasil/index.html"><img src="screenshots/v3-desktop.png" width="1440" height="900" loading="lazy" alt="V3 밤다실의 첫 화면. 먹색 바탕에 얇은 명조 제목과 청자 찻잔 속 호박빛 차"></a>
+        <img class="shot-mobile" src="screenshots/v3-mobile.png" width="390" height="844" loading="lazy" alt="V3 밤다실의 모바일 첫 화면">
+      </div>
+      <div class="v-grid">
+        <div>
+          <h3 class="v-sub">컬러 시스템</h3>
+          <div class="ratio" role="img" aria-label="면적 비율: 바탕 60%, 키 14%, 보조 16%, 포인트 10%">
+            <span style="--c:#0E1110; --w:60; --t:#ECE6D8">바탕 60</span><span style="--c:#8EC5B0; --w:14">14</span><span style="--c:#2C4A40; --w:16; --t:#ECE6D8">16</span><span style="--c:#D9B26F; --w:10">10</span>
+          </div>
+          <ul class="swatches">
+            <li><span class="sw" style="--c:#8EC5B0"></span><p><b>키</b> 청자 <code>#8EC5B0</code><small>키커, 라벨, 단계 번호, 포커스 링, 찻잔</small></p></li>
+            <li><span class="sw" style="--c:#2C4A40"></span><p><b>보조</b> 심청 <code>#2C4A40</code><small>선택된 칩 면, 우림 가이드 배경의 빛</small></p></li>
+            <li><span class="sw" style="--c:#0E1110"></span><p><b>바탕</b> 밤먹 <code>#0E1110</code><small>순수한 검정 대신 녹빛 먹색. 카드는 #141917 → #1B221F로 한 단계씩 밝게</small></p></li>
+            <li><span class="sw" style="--c:#D9B26F"></span><p><b>포인트</b> 금박 <code>#D9B26F</code><small>주 CTA, 가격, 타이머 고리</small></p></li>
+          </ul>
+          <p class="harmony">조화: 청자 계열 단색조에 따뜻한 금빛 하나. 글자는 순백 대신 아이보리 #ECE6D8로 눈부심을 줄임.</p>
+        </div>
+        <div>
+          <h3 class="v-sub">타이포그래피</h3>
+          <p class="specimen sp-v3">밤이 깊을수록, <em>Night Tea</em></p>
+          <p class="type-note">제목 함렛 250–300 · 본문 Pretendard 350 (어두운 바탕에서는 한 단계 가볍게) · 영문 Cormorant Garamond</p>
+          <h3 class="v-sub">레이아웃</h3>
+          <p class="v-text">화면을 꽉 채운 히어로, 스크롤해도 고정된 찻잔, 좌우로 넘기는 컬렉션 레일. 긴 크로스페이드(1.4초)로 장면을 바꿉니다.</p>
+        </div>
+        <div>
+          <h3 class="v-sub">UX 장치</h3>
+          <ul class="ux">
+            <li>스크롤리텔링: 단계가 바뀔 때마다 찻잔 속 물이 차로 우러남</li>
+            <li>우림 타이머: 차를 고르면 온도·시간이 바뀌고, 끝나면 소리 없이 화면과 스크린리더로 알림</li>
+            <li>장바구니는 네이티브 dialog 서랍(포커스 가두기, Esc 닫기)</li>
+            <li>무료 배송까지 남은 금액을 막대로 표시(목표 경사 효과)</li>
+            <li>예약 버튼이 “오늘 20:00 · 2명 예약하기”처럼 고른 내용을 그대로 말함</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare wrap" id="compare" aria-labelledby="compare-title">
+      <h2 id="compare-title">한눈에 비교</h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="compare-title">
+        <table>
+          <thead>
+            <tr><th scope="col">항목</th><th scope="col">V1 고요</th><th scope="col">V2 톡톡</th><th scope="col">V3 밤다실</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">디자인 철학</th><td>덜어내기, 에디토리얼</td><td>촉감과 놀이</td><td>몰입과 여운</td></tr>
+            <tr><th scope="row">누구에게</th><td>퇴근 후 쉼을 찾는 30–40대</td><td>차가 처음인 20대</td><td>선물을 고르는 30–40대</td></tr>
+            <tr><th scope="row">핵심 전환</th><td>월 구독 시작</td><td>취향 테스트 → 첫 박스</td><td>선물 세트 · 다실 예약</td></tr>
+            <tr><th scope="row">바탕 / 키</th><td>한지 #F4EFE6 / 송엽 #2F4B3C</td><td>오트밀크 #FFF5E8 / 히비스커스 #FF5470</td><td>밤먹 #0E1110 / 청자 #8EC5B0</td></tr>
+            <tr><th scope="row">보조 / 포인트</th><td>이끼 세이지 #A9B59F / 감 #B8512A</td><td>말차 라임 #C8F169 / 코발트 #2F45FF</td><td>심청 #2C4A40 / 금박 #D9B26F</td></tr>
+            <tr><th scope="row">서체</th><td>고운바탕 + Pretendard</td><td>검은고딕 + Pretendard + Space Grotesk</td><td>함렛 + Pretendard + Cormorant</td></tr>
+            <tr><th scope="row">모서리 · 그림자</th><td>4px, 거의 없는 그림자, 1px 선</td><td>14–32px, 하드 섀도, 2.5px 먹선</td><td>14–24px, 그림자 대신 면 밝기와 빛 번짐</td></tr>
+            <tr><th scope="row">모션</th><td>느린 페이드 0.9초</td><td>탄성 있는 반동 0.12–0.5초</td><td>긴 크로스페이드 1–1.4초</td></tr>
+            <tr><th scope="row">대표 UX</th><td>필터, 결제 주기 전환, 진행 막대</td><td>3문항 퀴즈, 토스트, 하단 고정 바</td><td>스크롤리텔링, 타이머, 서랍형 장바구니, 좌석 예약</td></tr>
+            <tr><th scope="row">빠지기 쉬운 함정과 대응</th><td>너무 조용하면 CTA가 묻힘 → 감빛은 CTA에만</td><td>산만함 → 테두리·그림자 규칙을 하나로 통일</td><td>어두운 화면의 가독성 → 아이보리 글자, 가벼운 굵기, 대비 검증</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">세 버전 모두 <code>node tools/contrast.mjs</code>로 실제 CSS 색 토큰의 대비를 검사했고, 필수 조합 30개가 모두 WCAG 2.2 AA를 통과했습니다. 결과는 <a href="https://github.com/smhan-dev/chagok-web-design/blob/main/docs/contrast-report.md">docs/contrast-report.md</a>에 있습니다.</p>
+    </section>
+  </main>
+
+  <footer class="hub-foot wrap">
+    <p>차곡은 디자인 연구를 위해 만든 가상의 브랜드입니다. 리서치와 출처는 <a href="https://github.com/smhan-dev/chagok-web-design/blob/main/docs/research.md">docs/research.md</a>에 정리했습니다.</p>
+  </footer>
+</body>
+</html>
