@@ -1,1 +1,9 @@
-temporary
+/* 자동 생성: tools/subset_fonts.py — 페이지에 쓰인 글자만 담은 서브셋 (SIL OFL 1.1, licenses/ 참고) */
+@font-face { font-family: "Pretendard"; src: url("pretendard-vf.woff2") format("woff2"); font-weight: 45 930; font-style: normal; font-display: swap; }
+@font-face { font-family: "Gowun Batang"; src: url("gowun-batang-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Gowun Batang"; src: url("gowun-batang-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("cormorant-italic-vf.woff2") format("woff2"); font-weight: 300 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Black Han Sans"; src: url("black-han-sans-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url("space-grotesk-vf.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Hahmlet"; src: url("hahmlet-vf.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("cormorant-vf.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
